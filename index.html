@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Трекер привычек</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Мои привычки</h1>
+    <p class="date" id="today-date"></p>
+
+    <div class="add-habit">
+      <input type="text" id="habit-input" placeholder="Новая привычка..." />
+      <button onclick="addHabit()">+ Добавить</button>
+    </div>
+
+    <div class="habits-list" id="habits-list"></div>
+
+    <div class="week-section">
+      <h2>Неделя</h2>
+      <div class="week-grid" id="week-grid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
