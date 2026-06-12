@@ -8,6 +8,17 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.svg" />
   <meta name="theme-color" content="#6c63ff" />
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "995da676-f3d9-43a7-aef7-44bea95dadd7",
+        serviceWorkerPath: "/habit-tracker/OneSignalSDKWorker.js",
+        serviceWorkerParam: { scope: "/habit-tracker/" }
+      });
+    });
+  </script>
 </head>
 <body>
 
