@@ -1,4 +1,4 @@
-const CACHE = 'habits-v1';
+const CACHE = 'habits-v2';
 const FILES = ['/', '/index.html', '/style.css', '/script.js', '/icon.svg'];
 
 self.addEventListener('install', e => {
